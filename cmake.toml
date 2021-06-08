@@ -1,0 +1,33 @@
+[cmake]
+version = "3.15"
+# subdirs = []
+# build-dir = ""
+# cpp-flags = []
+# c-flags = []
+# link-flags = []
+# generator = ""
+# arguments = []
+
+[project]
+name = "injections"
+version = "0.1.0"
+
+# [find-package]
+
+# [fetch-content]
+
+# [options]
+
+[target.injections]
+name = "injections"
+type = "executable"
+sources = ["src/*.cpp"]
+include-directories = ["include"]
+# alias = ""
+compile-features = [ "cxx_std_20" ]
+# compile-definitions = []
+# link-libraries = []
+
+[[install]]
+targets = ["injections"]
+destination = "${CMAKE_INSTALL_PREFIX}/bin"
